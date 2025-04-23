@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import nokia from "../../public/3310.png"
 import mixer from "../../public/mixer.png"
+import rateMyNext from "../../public/rate-my-next.png"
 import synth from "../../public/synth.png"
 
 export default function Page() {
@@ -29,13 +30,13 @@ export default function Page() {
           </div>
         </Link>
         <Link
-          href="https://synth.j3c7.dev"
+          href="https://rate-my-next.j3c7.dev"
           className="group text-2xl flex relative font-bold border hover:mix-blend-difference"
           target="_blank"
         >
-          <Image src={synth} alt="Synth" className="h-[220px] w-[300px] object-cover" />
+          <Image src={rateMyNext} alt="Rate My Next" className="h-[220px] w-[300px] object-cover" />
           <div className="absolute hidden group-hover:flex top-4 left-0 right-0 items-center justify-center">
-            <p>Synth</p>
+            <p>Rate My Next</p>
           </div>
         </Link>
         <Link
