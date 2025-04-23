@@ -1,8 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
+import nokia from "../../public/3310.png"
 import mixer from "../../public/mixer.png"
-import rateMyNext from "../../public/rate-my-next.png"
 import synth from "../../public/synth.png"
+
 export default function Page() {
   return (
     <div className="w-screen h-dvh bg-orange-50/20">
@@ -28,13 +29,23 @@ export default function Page() {
           </div>
         </Link>
         <Link
-          href="https://rate-my-next.j3c7.dev"
+          href="https://synth.j3c7.dev"
           className="group text-2xl flex relative font-bold border hover:mix-blend-difference"
           target="_blank"
         >
-          <Image src={rateMyNext} alt="Rate My Next" className="h-[300px] w-[400px] object-cover" />
+          <Image src={synth} alt="Synth" className="h-[300px] w-[400px] object-cover" />
           <div className="absolute hidden group-hover:flex top-4 left-0 right-0 items-center justify-center">
-            <p>Rate My Next</p>
+            <p>Synth</p>
+          </div>
+        </Link>
+        <Link
+          href="https://3310.j3c7.dev"
+          className="group text-2xl flex relative font-bold border hover:mix-blend-difference"
+          target="_blank"
+        >
+          <Image src={nokia} alt="Nokia 3310" className="h-[300px] w-[400px] object-cover" />
+          <div className="absolute hidden group-hover:flex top-4 left-0 right-0 items-center justify-center">
+            <p>Nokia 3310</p>
           </div>
         </Link>
       </div>
