@@ -2,10 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import nokia from "../../public/3310.png"
 import mixer from "../../public/mixer.png"
-import rateMyNext from "../../public/rate-my-next.png"
 import synth from "../../public/synth.png"
 
-//
 export default function Page() {
   return (
     <div className="w-screen h-dvh overflow-scroll bg-orange-50/20">
@@ -28,16 +26,6 @@ export default function Page() {
           <Image src={synth} alt="Synth" className="h-[220px] w-[300px] object-cover" />
           <div className="absolute hidden group-hover:flex top-4 left-0 right-0 items-center justify-center">
             <p>Synth</p>
-          </div>
-        </Link>
-        <Link
-          href="https://rate-my-next.j3c7.dev"
-          className="group text-2xl flex relative font-bold border hover:mix-blend-difference"
-          target="_blank"
-        >
-          <Image src={rateMyNext} alt="Rate My Next" className="h-[220px] w-[300px] object-cover" />
-          <div className="absolute hidden group-hover:flex top-4 left-0 right-0 items-center justify-center">
-            <p>Rate My Next</p>
           </div>
         </Link>
         <Link
