@@ -5,7 +5,6 @@ import mixer from "../../public/mixer.png"
 import rateMyNext from "../../public/rate-my-next.png"
 import synth from "../../public/synth.png"
 
-//
 export default function Page() {
   return (
     <div className="w-screen h-dvh overflow-scroll bg-orange-50/20">
