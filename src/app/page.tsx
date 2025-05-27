@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import nokia from "../../public/3310.png"
+import home from "../../public/home.png"
 import mixer from "../../public/mixer.png"
 import synth from "../../public/synth.png"
 
@@ -8,6 +9,16 @@ export default function Page() {
   return (
     <div className="w-screen h-dvh overflow-scroll bg-orange-50/20">
       <div className="flex max-w-7xl mx-auto flex-wrap items-center h-full justify-center p-4 gap-4">
+        <Link
+          href="https://home.j3c7.dev"
+          className="group text-2xl flex relative font-bold border hover:mix-blend-difference"
+          target="_blank"
+        >
+          <Image src={home} alt="Home" className="h-[220px] w-[300px] object-cover" />
+          <div className="absolute hidden group-hover:flex top-4 left-0 right-0 items-center justify-center">
+            <p>Home</p>
+          </div>
+        </Link>
         <Link
           href="https://mixer.j3c7.dev"
           className="group text-2xl flex relative font-bold border hover:mix-blend-difference"
