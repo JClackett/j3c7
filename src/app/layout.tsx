@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "j3c7",
-  description: "random things i make",
+  description:
+    "Personal playground for tinkering with web audio tools and 3D environments, exploring the intersection of code, sound, and visual art through creative experiments.",
 }
 
 export default function RootLayout({
